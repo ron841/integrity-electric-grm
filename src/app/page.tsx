@@ -1,11 +1,16 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
     <>
-      {/* NAV */}
+      {/* NAV — logo image (per O1 v2 reversal) */}
       <header className="nav">
         <div className="container nav-inner">
-          <a href="#top" className="nav-mark" data-slot="nav.wordmark">
-            Integrity <span>Electric</span>
+          <a href="#top" className="nav-mark" data-slot="nav.wordmark" aria-label="Integrity Electric — home">
+            <img
+              src="/assets/integritylogo.jpg"
+              alt="Integrity Electrical Contracting of Florida"
+            />
           </a>
           <nav className="nav-links" aria-label="Primary">
             <a href="#services">Services</a>
@@ -27,12 +32,16 @@ export default function Home() {
       <main id="main">
         {/* HERO */}
         <section id="top" className="hero" data-screen-label="01 Hero">
-          <img
-            className="hero-img"
-            src="/assets/hero-truck.jpg"
-            alt="The Integrity Electric service truck and scissor-lift trailer parked at a Marion County horse property, brick paver drive and fence line behind."
-            data-slot="hero.image"
-          />
+          <div className="hero-img-wrap">
+            <Image
+              src="/assets/hero-truck.jpg"
+              alt="The Integrity Electric service truck and scissor-lift trailer parked at a Marion County horse property, brick paver drive and fence line behind."
+              data-slot="hero.image"
+              fill
+              priority
+              sizes="100vw"
+            />
+          </div>
           <div className="hero-overlay"></div>
           <div className="container hero-inner">
             <p className="eyebrow hero-eyebrow" data-slot="hero.eyebrow">
@@ -69,7 +78,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* TRUST MARQUEE */}
+        {/* TRUST MARQUEE — 5 cells with license (D-22 resolved from logo) */}
         <section className="trust" data-screen-label="02 Trust">
           <div className="trust-grid">
             <div className="trust-item">
@@ -104,7 +113,7 @@ export default function Home() {
             <div className="trust-item">
               <div
                 className="trust-value"
-                style={{ fontSize: "clamp(18px, 1.7vw, 22px)" }}
+                style={{ fontSize: "clamp(16px, 1.5vw, 20px)" }}
                 data-slot="trust.item_4.value"
               >
                 Residential · Ag · Commercial
@@ -113,10 +122,22 @@ export default function Home() {
                 one electrician for every property
               </div>
             </div>
+            <div className="trust-item">
+              <div
+                className="trust-value"
+                style={{ fontSize: "clamp(20px, 2vw, 26px)" }}
+                data-slot="trust.item_5.value"
+              >
+                EC13006493
+              </div>
+              <div className="trust-label" data-slot="trust.item_5.label">
+                Florida-licensed electrical contractor
+              </div>
+            </div>
           </div>
         </section>
 
-        {/* SERVICES */}
+        {/* SERVICES — photo cards (E1 v2 fix-now) */}
         <section
           id="services"
           className="section"
@@ -148,92 +169,36 @@ export default function Home() {
               </p>
             </div>
             <div className="services-grid">
-              <article className="service-card">
-                <span className="service-num">01</span>
-                <h3
-                  className="service-title"
-                  data-slot="services.card_1.title"
-                >
-                  Residential electrical
-                </h3>
-                <p className="service-body" data-slot="services.card_1.body">
-                  Outlets, switches, fixtures, troubleshooting, and the small
-                  repairs that turn into bigger ones if you wait.
-                </p>
-              </article>
-              <article className="service-card">
-                <span className="service-num">02</span>
-                <h3
-                  className="service-title"
-                  data-slot="services.card_2.title"
-                >
-                  Panels, poles, and service work
-                </h3>
-                <p className="service-body" data-slot="services.card_2.body">
-                  Panel upgrades, utility-pole replacement, permitting, and
-                  inspections — full project, start to inspector-cleared.
-                </p>
-              </article>
-              <article className="service-card">
-                <span className="service-num">03</span>
-                <h3
-                  className="service-title"
-                  data-slot="services.card_3.title"
-                >
-                  Generator inlet switches
-                </h3>
-                <p className="service-body" data-slot="services.card_3.body">
-                  The job that used to take three estimate calls. Free quote,
-                  scheduled the next day, installed by the team —
-                  neighbor-tested.
-                </p>
-              </article>
-              <article className="service-card">
-                <span className="service-num">04</span>
-                <h3
-                  className="service-title"
-                  data-slot="services.card_4.title"
-                >
-                  Pool and heat-pump wiring
-                </h3>
-                <p className="service-body" data-slot="services.card_4.body">
-                  New equipment, corrected installs, and the wiring the last
-                  electrician didn&apos;t finish — diagnosed in an hour, fixed
-                  the same visit.
-                </p>
-              </article>
-              <article className="service-card">
-                <span className="service-num">05</span>
-                <h3
-                  className="service-title"
-                  data-slot="services.card_5.title"
-                >
-                  Barns and outbuildings
-                </h3>
-                <p className="service-body" data-slot="services.card_5.body">
-                  Old barns brought up to code, tack rooms, barn apartments,
-                  and the agricultural buildings nobody else wants to touch.
-                </p>
-              </article>
-              <article className="service-card">
-                <span className="service-num">06</span>
-                <h3
-                  className="service-title"
-                  data-slot="services.card_6.title"
-                >
-                  Shops and small commercial
-                </h3>
-                <p className="service-body" data-slot="services.card_6.body">
-                  Bay lights, outlets, switches, panels, underground wire —
-                  full shop builds with the owner in the room making changes
-                  as you go.
-                </p>
-              </article>
+              {[
+                { num: "01", slot: "services.card_1", title: "Residential electrical", body: "Outlets, switches, fixtures, troubleshooting, and the small repairs that turn into bigger ones if you wait.", photo: "/assets/photos/gbp-01.jpg" },
+                { num: "02", slot: "services.card_2", title: "Panels, poles, and service work", body: "Panel upgrades, utility-pole replacement, permitting, and inspections — full project, start to inspector-cleared.", photo: "/assets/photos/gbp-02.jpg" },
+                { num: "03", slot: "services.card_3", title: "Generator inlet switches", body: "The job that used to take three estimate calls. Free quote, scheduled the next day, installed by the team — neighbor-tested.", photo: "/assets/photos/gbp-03.jpg" },
+                { num: "04", slot: "services.card_4", title: "Pool and heat-pump wiring", body: "New equipment, corrected installs, and the wiring the last electrician didn't finish — diagnosed in an hour, fixed the same visit.", photo: "/assets/photos/gbp-04.jpg" },
+                { num: "05", slot: "services.card_5", title: "Barns and outbuildings", body: "Old barns brought up to code, tack rooms, barn apartments, and the agricultural buildings nobody else wants to touch.", photo: "/assets/photos/gbp-05.jpg" },
+                { num: "06", slot: "services.card_6", title: "Shops and small commercial", body: "Bay lights, outlets, switches, panels, underground wire — full shop builds with the owner in the room making changes as you go.", photo: "/assets/photos/gbp-06.jpg" },
+              ].map((s) => (
+                <article key={s.num} className="service-card">
+                  <div className="service-photo">
+                    <Image
+                      src={s.photo}
+                      alt={`Integrity Electric ${s.title.toLowerCase()} job photo`}
+                      width={800}
+                      height={600}
+                      sizes="(max-width: 600px) 100vw, (max-width: 980px) 50vw, 33vw"
+                    />
+                  </div>
+                  <div className="service-body-wrap">
+                    <span className="service-num">{s.num}</span>
+                    <h3 className="service-title" data-slot={`${s.slot}.title`}>{s.title}</h3>
+                    <p className="service-body" data-slot={`${s.slot}.body`}>{s.body}</p>
+                  </div>
+                </article>
+              ))}
             </div>
           </div>
         </section>
 
-        {/* PROOF */}
+        {/* PROOF — 6 quotes + real photo grid */}
         <section
           id="proof"
           className="section proof"
@@ -254,6 +219,8 @@ export default function Home() {
                 from Google.
               </p>
             </div>
+
+            {/* Curated leads — first row */}
             <div className="proof-quotes">
               <article className="quote-card">
                 <div className="quote-stars">★★★★★</div>
@@ -265,16 +232,10 @@ export default function Home() {
                   cleared by the inspector and was safe.&rdquo;
                 </p>
                 <div className="quote-meta">
-                  <span
-                    className="quote-attribution"
-                    data-slot="proof.review_1.attribution"
-                  >
+                  <span className="quote-attribution" data-slot="proof.review_1.attribution">
                     Micah H. · Google · 10 months ago
                   </span>
-                  <span
-                    className="quote-context"
-                    data-slot="proof.review_1.context"
-                  >
+                  <span className="quote-context" data-slot="proof.review_1.context">
                     Pole replacement and new panel
                   </span>
                 </div>
@@ -288,16 +249,10 @@ export default function Home() {
                   every encounter was hands down 5 stars.&rdquo;
                 </p>
                 <div className="quote-meta">
-                  <span
-                    className="quote-attribution"
-                    data-slot="proof.review_2.attribution"
-                  >
+                  <span className="quote-attribution" data-slot="proof.review_2.attribution">
                     Kaliway F. · Google · 9 months ago
                   </span>
-                  <span
-                    className="quote-context"
-                    data-slot="proof.review_2.context"
-                  >
+                  <span className="quote-context" data-slot="proof.review_2.context">
                     Generator inlet switch installation
                   </span>
                 </div>
@@ -312,47 +267,110 @@ export default function Home() {
                   gets it done properly.&rdquo;
                 </p>
                 <div className="quote-meta">
-                  <span
-                    className="quote-attribution"
-                    data-slot="proof.review_3.attribution"
-                  >
+                  <span className="quote-attribution" data-slot="proof.review_3.attribution">
                     Vanessa S. · Google · 2 years ago
                   </span>
-                  <span
-                    className="quote-context"
-                    data-slot="proof.review_3.context"
-                  >
+                  <span className="quote-context" data-slot="proof.review_3.context">
                     Barn rewiring and tack-room build
                   </span>
                 </div>
               </article>
             </div>
+
+            {/* Second row — 3 more curated quotes */}
+            <div className="proof-quotes row-2">
+              <article className="quote-card">
+                <div className="quote-stars">★★★★★</div>
+                <p className="quote-body" data-slot="proof.review_4.body">
+                  &ldquo;I called Integrity to correct the work of a previous
+                  electrician that wired a new swimming pool heat pump.
+                  Mathew answered the phone and set up an appointment that
+                  fit my schedule. The crew showed up on time and did
+                  excellent work.&rdquo;
+                </p>
+                <div className="quote-meta">
+                  <span className="quote-attribution" data-slot="proof.review_4.attribution">
+                    J. Winnett · Google · 2 months ago
+                  </span>
+                  <span className="quote-context" data-slot="proof.review_4.context">
+                    Pool heat-pump rewire and correction
+                  </span>
+                </div>
+              </article>
+              <article className="quote-card">
+                <div className="quote-stars">★★★★★</div>
+                <p className="quote-body" data-slot="proof.review_5.body">
+                  &ldquo;Came the same day that I called and was completely
+                  knowledgeable for the task at hand. He was done in less
+                  than an hour. We were very pleased. Excellent. We will use
+                  them again when we need their services.&rdquo;
+                </p>
+                <div className="quote-meta">
+                  <span className="quote-attribution" data-slot="proof.review_5.attribution">
+                    Diane H. · Google · 6 months ago
+                  </span>
+                  <span className="quote-context" data-slot="proof.review_5.context">
+                    Same-day residential service
+                  </span>
+                </div>
+              </article>
+              <article className="quote-card">
+                <div className="quote-stars">★★★★★</div>
+                <p className="quote-body" data-slot="proof.review_6.body">
+                  &ldquo;I have used Integrity Electric at both my house and
+                  my office. I have recommended them to friends and family.
+                  Their quality and professionalism are unmatched!&rdquo;
+                </p>
+                <div className="quote-meta">
+                  <span className="quote-attribution" data-slot="proof.review_6.attribution">
+                    Casey D. · Google · 3 months ago
+                  </span>
+                  <span className="quote-context" data-slot="proof.review_6.context">
+                    Repeat customer — house and office
+                  </span>
+                </div>
+              </article>
+            </div>
+
+            {/* Photo grid — 4 real photos (E2 v2 fix-now) */}
             <div
               className="proof-photos"
-              aria-label="Recent finished-work photos (operator-curated at walkthrough)"
+              aria-label="Recent finished-work photos"
             >
-              <div className="proof-photo" data-slot="proof.photo_1">
-                Photo 01
-              </div>
-              <div className="proof-photo" data-slot="proof.photo_2">
-                Photo 02
-              </div>
-              <div className="proof-photo" data-slot="proof.photo_3">
-                Photo 03
-              </div>
-              <div className="proof-photo" data-slot="proof.photo_4">
-                Photo 04
-              </div>
+              {[
+                { slot: "proof.photo_1", src: "/assets/photos/gbp-07.jpg" },
+                { slot: "proof.photo_2", src: "/assets/photos/gbp-08.jpg" },
+                { slot: "proof.photo_3", src: "/assets/photos/gbp-09.jpg" },
+                { slot: "proof.photo_4", src: "/assets/photos/gbp-10.jpg" },
+              ].map((p, i) => (
+                <div className="proof-photo" data-slot={p.slot} key={p.slot}>
+                  <Image
+                    src={p.src}
+                    alt={`Integrity Electric finished-work photo ${i + 1}`}
+                    width={600}
+                    height={750}
+                    sizes="(max-width: 760px) 50vw, 25vw"
+                  />
+                </div>
+              ))}
             </div>
+
             <div className="proof-cta-row">
               <a
-                href="https://www.google.com/search?q=Integrity+Electrical+Contracting+of+Florida+Belleview"
+                href="/reviews"
+                className="proof-cta"
+                data-slot="proof.cta_to_reviews_page"
+              >
+                Read all 106 reviews →
+              </a>
+              <a
+                href="https://www.google.com/maps/place/?q=place_id:ChIJy-BZ5zTP54gRfo78eg_6t7g"
                 className="proof-cta"
                 data-slot="proof.cta_to_google"
                 target="_blank"
                 rel="noopener"
               >
-                See all 106 reviews on Google →
+                On Google →
               </a>
             </div>
           </div>
@@ -415,21 +433,16 @@ export default function Home() {
             </div>
             <div className="faq-list">
               <details className="faq-item">
-                <summary data-slot="faq.q1.q">
-                  How fast can someone come out?
-                </summary>
+                <summary data-slot="faq.q1.q">How fast can someone come out?</summary>
                 <p className="faq-answer" data-slot="faq.q1.a">
                   Often same-day. Customers describe calling in the morning
                   and having the team on site by afternoon — and free
                   estimates scheduled for the next business day. Friday
-                  call-by-noon is the rough ceiling for same-week
-                  scheduling.
+                  call-by-noon is the rough ceiling for same-week scheduling.
                 </p>
               </details>
               <details className="faq-item">
-                <summary data-slot="faq.q2.q">
-                  What kind of jobs do you take?
-                </summary>
+                <summary data-slot="faq.q2.q">What kind of jobs do you take?</summary>
                 <p className="faq-answer" data-slot="faq.q2.a">
                   Residential repair and troubleshooting, full panel and
                   service upgrades, generator inlet switches, pool and
@@ -468,30 +481,21 @@ export default function Home() {
           <div className="container">
             <div className="section-head">
               <div className="label-stack">
-                <span
-                  className="eyebrow"
-                  data-slot="contact.section_eyebrow"
-                >
+                <span className="eyebrow" data-slot="contact.section_eyebrow">
                   Get in touch
                 </span>
-                <h2
-                  className="section-title"
-                  data-slot="contact.section_title"
-                >
+                <h2 className="section-title" data-slot="contact.section_title">
                   Free estimate. Same conversation either way.
                 </h2>
               </div>
               <p className="section-lead" data-slot="contact.section_lead">
                 Phone is fastest. Email and the form below both reach the
-                team — phone gets you a callback the same day in most
-                cases.
+                team — phone gets you a callback the same day in most cases.
               </p>
             </div>
             <div className="contact-grid">
               <div className="contact-phone-block">
-                <span className="phone-label">
-                  Call the lead electrician
-                </span>
+                <span className="phone-label">Call the lead electrician</span>
                 <a
                   href="tel:+13523076335"
                   className="phone-num"
@@ -499,10 +503,7 @@ export default function Home() {
                 >
                   (352) 307-6335
                 </a>
-                <p
-                  className="contact-phone-note"
-                  data-slot="contact.phone_note"
-                >
+                <p className="contact-phone-note" data-slot="contact.phone_note">
                   Lead electrician answers most days.
                 </p>
               </div>
@@ -510,10 +511,7 @@ export default function Home() {
                 <div className="contact-row">
                   <span className="contact-row-label">Email</span>
                   <span className="contact-row-value">
-                    <a
-                      href="mailto:integrity.elec@aol.com"
-                      data-slot="contact.email"
-                    >
+                    <a href="mailto:integrity.elec@aol.com" data-slot="contact.email">
                       integrity.elec@aol.com
                     </a>
                   </span>
@@ -521,74 +519,31 @@ export default function Home() {
                 <div className="contact-row">
                   <span className="contact-row-label">Address</span>
                   <span className="contact-row-value">
-                    <span data-slot="contact.address_street">
-                      7325 SE 105th Pl
-                    </span>
+                    <span data-slot="contact.address_street">7325 SE 105th Pl</span>
                     <br />
-                    <span data-slot="contact.address_locality">
-                      Belleview, FL 34420
-                    </span>
+                    <span data-slot="contact.address_locality">Belleview, FL 34420</span>
                   </span>
                 </div>
                 <div className="contact-row">
                   <span className="contact-row-label">Hours</span>
                   <div className="hours-table">
                     <span className="hours-day">Mon</span>
-                    <span
-                      className="hours-time"
-                      data-slot="contact.hours.mon"
-                    >
-                      7:30 AM – 5:00 PM
-                    </span>
+                    <span className="hours-time" data-slot="contact.hours.mon">7:30 AM – 5:00 PM</span>
                     <span className="hours-day">Tue</span>
-                    <span
-                      className="hours-time"
-                      data-slot="contact.hours.tue"
-                    >
-                      7:30 AM – 5:00 PM
-                    </span>
+                    <span className="hours-time" data-slot="contact.hours.tue">7:30 AM – 5:00 PM</span>
                     <span className="hours-day">Wed</span>
-                    <span
-                      className="hours-time"
-                      data-slot="contact.hours.wed"
-                    >
-                      7:30 AM – 5:00 PM
-                    </span>
+                    <span className="hours-time" data-slot="contact.hours.wed">7:30 AM – 5:00 PM</span>
                     <span className="hours-day">Thu</span>
-                    <span
-                      className="hours-time"
-                      data-slot="contact.hours.thu"
-                    >
-                      7:30 AM – 5:00 PM
-                    </span>
+                    <span className="hours-time" data-slot="contact.hours.thu">7:30 AM – 5:00 PM</span>
                     <span className="hours-day">Fri</span>
-                    <span
-                      className="hours-time"
-                      data-slot="contact.hours.fri"
-                    >
-                      7:30 AM – 5:00 PM*
-                    </span>
+                    <span className="hours-time" data-slot="contact.hours.fri">7:30 AM – 5:00 PM*</span>
                     <span className="hours-day">Sat</span>
-                    <span
-                      className="hours-time"
-                      data-slot="contact.hours.sat"
-                    >
-                      9:00 AM – 12:00 PM
-                    </span>
+                    <span className="hours-time" data-slot="contact.hours.sat">9:00 AM – 12:00 PM</span>
                     <span className="hours-day">Sun</span>
-                    <span
-                      className="hours-time closed"
-                      data-slot="contact.hours.sun"
-                    >
-                      Closed
-                    </span>
+                    <span className="hours-time closed" data-slot="contact.hours.sun">Closed</span>
                   </div>
-                  <p
-                    className="hours-note"
-                    data-slot="contact.hours.fri_note"
-                  >
-                    *Friday hours pending walkthrough confirmation —
-                    captured data shows 5:00 AM, PM intended.
+                  <p className="hours-note" data-slot="contact.hours.fri_note">
+                    *Friday hours pending walkthrough confirmation — captured data shows 5:00 AM, PM intended.
                   </p>
                 </div>
                 <div className="contact-row">
@@ -605,6 +560,68 @@ export default function Home() {
                   </span>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* CONTACT FORM (D-18 v2 reversal) */}
+        <section
+          id="contact-form"
+          className="contact-form-section"
+          data-screen-label="08 Contact form"
+        >
+          <div className="container">
+            <div className="contact-form-grid">
+              <div className="label-stack">
+                <span className="eyebrow" data-slot="form.section_eyebrow">
+                  Send a message
+                </span>
+                <h2
+                  className="section-title"
+                  style={{ fontSize: "clamp(28px, 3.4vw, 44px)" }}
+                  data-slot="form.section_title"
+                >
+                  Prefer email? Tell us about the job.
+                </h2>
+                <p className="section-lead" style={{ fontSize: "16px", maxWidth: "44ch" }}>
+                  We respond same-day on weekdays. For emergencies and Friday-after-noon scheduling, call instead.
+                </p>
+              </div>
+              <form
+                className="contact-form"
+                action="https://api.staticforms.xyz/submit"
+                method="post"
+                data-slot="form.element"
+              >
+                <input type="hidden" name="accessKey" value="sf_e0e200934d4f36c17a10d00c" />
+                <input type="hidden" name="subject" value="Integrity Electric · Contact form" />
+                <input type="hidden" name="redirectTo" value="https://integrity-electric-grm.vercel.app/thanks" />
+                <input type="hidden" name="replyTo" value="@" />
+                <div className="honeypot">
+                  <label htmlFor="gotcha">Leave blank</label>
+                  <input type="text" id="gotcha" name="$gotcha" tabIndex={-1} autoComplete="off" />
+                </div>
+                <div>
+                  <label htmlFor="form-name">Name</label>
+                  <input id="form-name" name="name" type="text" required autoComplete="name" />
+                </div>
+                <div>
+                  <label htmlFor="form-email">Email</label>
+                  <input id="form-email" name="email" type="email" required autoComplete="email" />
+                </div>
+                <div>
+                  <label htmlFor="form-phone">Phone (optional)</label>
+                  <input id="form-phone" name="phone" type="tel" autoComplete="tel" />
+                </div>
+                <div>
+                  <label htmlFor="form-message">What&apos;s the job?</label>
+                  <textarea id="form-message" name="message" required></textarea>
+                </div>
+                <button type="submit">Send to Integrity</button>
+                <p className="contact-form-note">
+                  Goes straight to the team. We don&apos;t share your info.
+                </p>
+              </form>
             </div>
           </div>
         </section>
@@ -651,8 +668,8 @@ export default function Home() {
               </span>{" "}
               All rights reserved.
             </span>
-            <span data-slot="footer.fl_license" hidden>
-              FL EC# (pending walkthrough)
+            <span data-slot="footer.fl_license">
+              FL EC# EC13006493
             </span>
           </div>
         </div>

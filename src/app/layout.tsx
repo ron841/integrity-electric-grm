@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: "Integrity Electric — Marion County Electrician · Belleview, FL",
   description:
-    "Marion County electrician for residential, agricultural, and small-commercial work. Panels, generators, pool wiring, pole and barn jobs. Free estimates, same-day calls.",
+    "Marion County electrician for residential, agricultural, and small-commercial work. Panels, generators, pool wiring, pole and barn jobs. Free estimates, same-day calls. FL EC13006493.",
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
@@ -61,6 +61,7 @@ export default function RootLayout({
     telephone: "+1-352-307-6335",
     email: "integrity.elec@aol.com",
     url: SITE_URL,
+    identifier: { "@type": "PropertyValue", propertyID: "FL Electrical Contractor License", value: "EC13006493" },
     address: {
       "@type": "PostalAddress",
       streetAddress: "7325 SE 105th Pl",
@@ -92,6 +93,9 @@ export default function RootLayout({
       { "@type": "AdministrativeArea", name: "Marion County, FL" },
       { "@type": "City", name: "Belleview" },
       { "@type": "City", name: "Ocala" },
+      { "@type": "City", name: "The Villages" },
+      { "@type": "City", name: "Summerfield" },
+      { "@type": "City", name: "Dunnellon" },
     ],
     serviceType: [
       "Residential electrical",
