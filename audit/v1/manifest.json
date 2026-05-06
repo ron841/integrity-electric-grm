@@ -1,0 +1,53 @@
+{
+  "audit_pass": "v1",
+  "ran_at": "2026-05-05T22:50:00Z",
+  "live_url": "https://integrity-electric-grm.vercel.app",
+  "site_repo": "https://github.com/ron841/integrity-electric-grm",
+  "design_pack_ref": "_design-pack/integrity-electric-pack/ (iter-1)",
+  "audit_pack_ref": "https://github.com/ron841/grm-prospect-integrity-electrical-contracting-of-florida-inc",
+  "standing_docs_pinned_sha": "adc87d19b49d282f6b0b73559501745d049fd294",
+  "categories": {
+    "BLOCKERS": 0,
+    "POLISH": 3,
+    "OPTIONAL": 3,
+    "DESIGN_RE_REVIEW": 2
+  },
+  "findings": [
+    { "id": "P1", "category": "POLISH", "title": "Open Graph image missing", "screenshots": [], "build_location": "src/app/layout.tsx" },
+    { "id": "P2", "category": "POLISH", "title": "Hero image ships at full source resolution unoptimized", "screenshots": ["03-desktop-hero.png"], "build_location": "src/app/page.tsx:14-19" },
+    { "id": "P3", "category": "POLISH", "title": "No scroll-padding-top defense", "screenshots": ["03-desktop-hero.png", "05-desktop-services.png"], "build_location": "src/app/globals.css:30-31" },
+    { "id": "O1", "category": "OPTIONAL", "title": "Logo asset wired as favicon + schema.logo only, not nav/footer wordmark", "screenshots": ["01-desktop-above-fold.png", "10-desktop-footer.png"], "build_location": "src/app/page.tsx:8-10, 539-541" },
+    { "id": "O2", "category": "OPTIONAL", "title": "Truck-door phone discrepancy visible in hero photo (D-13)", "screenshots": ["03-desktop-hero.png"], "build_location": "n/a (walkthrough)" },
+    { "id": "O3", "category": "OPTIONAL", "title": "Friday hours asterisk + footnote present (D-12)", "screenshots": ["09-desktop-contact.png"], "build_location": "src/app/page.tsx:439-449" },
+    { "id": "D1", "category": "DESIGN_RE_REVIEW", "title": "JSON-LD image field substituted hero-truck.jpg for unspecified FB cover URL", "screenshots": [], "build_location": "src/app/layout.tsx:60" },
+    { "id": "D2", "category": "DESIGN_RE_REVIEW", "title": "JSON-LD logo field added (not in pack content-inventory)", "screenshots": [], "build_location": "src/app/layout.tsx:61" }
+  ],
+  "verified_clean": [
+    "0 console errors (desktop + mobile)",
+    "0 network 4xx/5xx",
+    "87 data-slot attributes preserved (pack-exact)",
+    "JSON-LD Electrician schema parses, aggregateRating 4.8/106 correct",
+    "Heading hierarchy: 1xH1, 5xH2, 6xH3, no skips",
+    "All anchor IDs resolve to existing targets",
+    "FAQ accordion functional",
+    "Mobile sticky call bar visible, hidden on desktop",
+    "Mobile nav-links hidden at <761px",
+    "Verifier fixes preserved (hero overlay+text-shadow, nav-CTA nowrap)",
+    "Drop cap on About para 1 renders (D-20)",
+    "Friday asterisk + footnote rendered as authored (D-12)",
+    "footer.fl_license correctly hidden",
+    "All meta tags present (title, description, canonical, OG, Twitter)",
+    "Favicon + apple-touch-icon wired to logo asset",
+    "sitemap.xml + robots.txt + hero asset all HTTP 200"
+  ],
+  "open_decisions_state": "all 16 pack Open Decisions remain in pack-authored state (walkthrough / hidden / asterisk-noted). Code did not resolve any.",
+  "screenshots_dir": "screenshots/",
+  "screenshot_count": 25,
+  "raw_findings": "findings.json",
+  "audit_script": "run-audit.mjs",
+  "playwright_version": "1.59.1",
+  "viewports_tested": [
+    { "name": "desktop", "width": 1440, "height": 900, "deviceScaleFactor": 2 },
+    { "name": "mobile", "width": 375, "height": 812, "deviceScaleFactor": 3, "isMobile": true }
+  ]
+}
