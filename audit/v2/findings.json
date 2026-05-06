@@ -1,0 +1,636 @@
+{
+  "url": "https://integrity-electric-grm.vercel.app",
+  "audit_pass": "v2",
+  "ran_at": "2026-05-06T03:22:25.631Z",
+  "desktop": {
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "The electrician who answers the phone, names the price, and finishes what the last guy didn't."
+      },
+      {
+        "tag": "H2",
+        "text": "Every kind of electrical work in Marion County"
+      },
+      {
+        "tag": "H3",
+        "text": "Residential electrical"
+      },
+      {
+        "tag": "H3",
+        "text": "Panels, poles, and service work"
+      },
+      {
+        "tag": "H3",
+        "text": "Generator inlet switches"
+      },
+      {
+        "tag": "H3",
+        "text": "Pool and heat-pump wiring"
+      },
+      {
+        "tag": "H3",
+        "text": "Barns and outbuildings"
+      },
+      {
+        "tag": "H3",
+        "text": "Shops and small commercial"
+      },
+      {
+        "tag": "H2",
+        "text": "A hundred and six reviews. Four-point-eight stars."
+      },
+      {
+        "tag": "H2",
+        "text": "A Belleview electrician with a Marion County book."
+      },
+      {
+        "tag": "H2",
+        "text": "What people usually want to know before they call."
+      },
+      {
+        "tag": "H2",
+        "text": "Free estimate. Same conversation either way."
+      },
+      {
+        "tag": "H2",
+        "text": "Prefer email? Tell us about the job."
+      }
+    ],
+    "data_slots": [
+      "nav.wordmark",
+      "hero.image",
+      "hero.eyebrow",
+      "hero.headline",
+      "hero.subhead",
+      "hero.cta_primary",
+      "hero.cta_secondary",
+      "hero.trust_line",
+      "trust.item_1.value",
+      "trust.item_1.label",
+      "trust.item_2.value",
+      "trust.item_2.label",
+      "trust.item_3.value",
+      "trust.item_3.label",
+      "trust.item_4.value",
+      "trust.item_4.label",
+      "trust.item_5.value",
+      "trust.item_5.label",
+      "services.section_eyebrow",
+      "services.section_title",
+      "services.section_lead",
+      "services.card_1.title",
+      "services.card_1.body",
+      "services.card_2.title",
+      "services.card_2.body",
+      "services.card_3.title",
+      "services.card_3.body",
+      "services.card_4.title",
+      "services.card_4.body",
+      "services.card_5.title",
+      "services.card_5.body",
+      "services.card_6.title",
+      "services.card_6.body",
+      "proof.section_eyebrow",
+      "proof.section_title",
+      "proof.section_lead",
+      "proof.review_1.body",
+      "proof.review_1.attribution",
+      "proof.review_1.context",
+      "proof.review_2.body",
+      "proof.review_2.attribution",
+      "proof.review_2.context",
+      "proof.review_3.body",
+      "proof.review_3.attribution",
+      "proof.review_3.context",
+      "proof.review_4.body",
+      "proof.review_4.attribution",
+      "proof.review_4.context",
+      "proof.review_5.body",
+      "proof.review_5.attribution",
+      "proof.review_5.context",
+      "proof.review_6.body",
+      "proof.review_6.attribution",
+      "proof.review_6.context",
+      "proof.photo_1",
+      "proof.photo_2",
+      "proof.photo_3",
+      "proof.photo_4",
+      "proof.cta_to_reviews_page",
+      "proof.cta_to_google",
+      "about.section_eyebrow",
+      "about.section_title",
+      "about.para_1",
+      "about.para_2",
+      "about.para_3",
+      "faq.section_eyebrow",
+      "faq.section_title",
+      "faq.q1.q",
+      "faq.q1.a",
+      "faq.q2.q",
+      "faq.q2.a",
+      "faq.q3.q",
+      "faq.q3.a",
+      "faq.q4.q",
+      "faq.q4.a",
+      "contact.section_eyebrow",
+      "contact.section_title",
+      "contact.section_lead",
+      "contact.phone",
+      "contact.phone_note",
+      "contact.email",
+      "contact.address_street",
+      "contact.address_locality",
+      "contact.hours.mon",
+      "contact.hours.tue",
+      "contact.hours.wed",
+      "contact.hours.thu",
+      "contact.hours.fri",
+      "contact.hours.sat",
+      "contact.hours.sun",
+      "contact.hours.fri_note",
+      "contact.facebook",
+      "form.section_eyebrow",
+      "form.section_title",
+      "form.element",
+      "footer.wordmark",
+      "footer.tagline",
+      "footer.contact_line",
+      "footer.copyright",
+      "footer.legal_name",
+      "footer.fl_license",
+      "sticky.cta_label"
+    ]
+  },
+  "mobile": {
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "The electrician who answers the phone, names the price, and finishes what the last guy didn't."
+      },
+      {
+        "tag": "H2",
+        "text": "Every kind of electrical work in Marion County"
+      },
+      {
+        "tag": "H3",
+        "text": "Residential electrical"
+      },
+      {
+        "tag": "H3",
+        "text": "Panels, poles, and service work"
+      },
+      {
+        "tag": "H3",
+        "text": "Generator inlet switches"
+      },
+      {
+        "tag": "H3",
+        "text": "Pool and heat-pump wiring"
+      },
+      {
+        "tag": "H3",
+        "text": "Barns and outbuildings"
+      },
+      {
+        "tag": "H3",
+        "text": "Shops and small commercial"
+      },
+      {
+        "tag": "H2",
+        "text": "A hundred and six reviews. Four-point-eight stars."
+      },
+      {
+        "tag": "H2",
+        "text": "A Belleview electrician with a Marion County book."
+      },
+      {
+        "tag": "H2",
+        "text": "What people usually want to know before they call."
+      },
+      {
+        "tag": "H2",
+        "text": "Free estimate. Same conversation either way."
+      },
+      {
+        "tag": "H2",
+        "text": "Prefer email? Tell us about the job."
+      }
+    ]
+  },
+  "meta": {
+    "title": "Integrity Electric — Marion County Electrician · Belleview, FL",
+    "description": "Marion County electrician for residential, agricultural, and small-commercial work. Panels, generators, pool wiring, pole and barn jobs. Free estimates, same-day calls. FL EC13006493.",
+    "canonical": "https://integrity-electric-grm.vercel.app",
+    "og_title": "Integrity Electric — Marion County Electrician",
+    "og_description": "A hundred and six reviews. Four-point-eight stars. The Marion County electrician who answers the phone.",
+    "og_image": "https://integrity-electric-grm.vercel.app/opengraph-image?515b5f88082d4fb5",
+    "og_image_width": "1200",
+    "og_image_height": "630",
+    "og_url": "https://integrity-electric-grm.vercel.app",
+    "og_type": "website",
+    "twitter_card": "summary_large_image",
+    "twitter_title": "Integrity Electric — Marion County Electrician",
+    "twitter_image": "https://integrity-electric-grm.vercel.app/opengraph-image?515b5f88082d4fb5",
+    "favicon": "/assets/integritylogo.jpg",
+    "apple_touch": "/assets/integritylogo.jpg",
+    "viewport": "width=device-width, initial-scale=1",
+    "lang": "en"
+  },
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "Electrician",
+    "name": "Integrity Electrical Contracting of Florida Inc.",
+    "alternateName": "Integrity Electric",
+    "image": "https://integrity-electric-grm.vercel.app/assets/hero-truck.jpg",
+    "logo": "https://integrity-electric-grm.vercel.app/assets/integritylogo.jpg",
+    "telephone": "+1-352-307-6335",
+    "email": "integrity.elec@aol.com",
+    "url": "https://integrity-electric-grm.vercel.app",
+    "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "FL Electrical Contractor License",
+      "value": "EC13006493"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "7325 SE 105th Pl",
+      "addressLocality": "Belleview",
+      "addressRegion": "FL",
+      "postalCode": "34420",
+      "addressCountry": "US"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "07:30",
+        "closes": "17:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "09:00",
+        "closes": "12:00"
+      }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "106"
+    },
+    "areaServed": [
+      {
+        "@type": "AdministrativeArea",
+        "name": "Marion County, FL"
+      },
+      {
+        "@type": "City",
+        "name": "Belleview"
+      },
+      {
+        "@type": "City",
+        "name": "Ocala"
+      },
+      {
+        "@type": "City",
+        "name": "The Villages"
+      },
+      {
+        "@type": "City",
+        "name": "Summerfield"
+      },
+      {
+        "@type": "City",
+        "name": "Dunnellon"
+      }
+    ],
+    "serviceType": [
+      "Residential electrical",
+      "Generator inlet switch installation",
+      "Pool and heat-pump wiring",
+      "Electrical panel installation",
+      "Utility pole installation",
+      "Agricultural and barn electrical",
+      "Shop and small-commercial electrical",
+      "Light fixture installation",
+      "Outlet and switch installation",
+      "Electrical inspections"
+    ],
+    "sameAs": [
+      "https://www.facebook.com/Integrityelectric1/"
+    ]
+  },
+  "console": {
+    "desktop": [],
+    "mobile": [],
+    "reviews": [],
+    "thanks": []
+  },
+  "network": {
+    "desktop": [],
+    "mobile": [],
+    "reviews": [],
+    "thanks": []
+  },
+  "anchors": {
+    "#services": {
+      "scrollY": 896,
+      "elementTop": 160,
+      "elementInDocument": 1056,
+      "landed_on_target": false
+    },
+    "#proof": {
+      "scrollY": 2364,
+      "elementTop": 160,
+      "elementInDocument": 2524,
+      "landed_on_target": false
+    },
+    "#about": {
+      "scrollY": 4094,
+      "elementTop": 160,
+      "elementInDocument": 4254,
+      "landed_on_target": false
+    },
+    "#faq": {
+      "scrollY": 4812,
+      "elementTop": 160,
+      "elementInDocument": 4972,
+      "landed_on_target": false
+    },
+    "#contact": {
+      "scrollY": 5710,
+      "elementTop": 160,
+      "elementInDocument": 5870,
+      "landed_on_target": false
+    },
+    "#top": {
+      "scrollY": 0,
+      "elementTop": 81,
+      "elementInDocument": 81,
+      "landed_on_target": true
+    }
+  },
+  "assets": {
+    "images": [
+      {
+        "src": "https://integrity-electric-grm.vercel.app/assets/integritylogo.jpg",
+        "alt": "Integrity Electrical Contracting of Florida",
+        "naturalWidth": 828,
+        "naturalHeight": 827,
+        "loaded": true
+      },
+      {
+        "src": "https://integrity-electric-grm.vercel.app/_next/image?url=%2Fassets%2Fhero-truck.jpg&w=3840&q=75",
+        "alt": "The Integrity Electric service truck and scissor-lift trailer parked at a Marion County horse property, brick paver drive and fence line behind.",
+        "naturalWidth": 442,
+        "naturalHeight": 330,
+        "loaded": true
+      },
+      {
+        "src": "https://integrity-electric-grm.vercel.app/_next/image?url=%2Fassets%2Fphotos%2Fgbp-01.jpg&w=1080&q=75",
+        "alt": "Integrity Electric residential electrical job photo",
+        "naturalWidth": 364,
+        "naturalHeight": 281,
+        "loaded": true
+      },
+      {
+        "src": "https://integrity-electric-grm.vercel.app/_next/image?url=%2Fassets%2Fphotos%2Fgbp-02.jpg&w=1080&q=75",
+        "alt": "Integrity Electric panels, poles, and service work job photo",
+        "naturalWidth": 475,
+        "naturalHeight": 633,
+        "loaded": true
+      },
+      {
+        "src": "https://integrity-electric-grm.vercel.app/_next/image?url=%2Fassets%2Fphotos%2Fgbp-03.jpg&w=1080&q=75",
+        "alt": "Integrity Electric generator inlet switches job photo",
+        "naturalWidth": 475,
+        "naturalHeight": 633,
+        "loaded": true
+      },
+      {
+        "src": "https://integrity-electric-grm.vercel.app/_next/image?url=%2Fassets%2Fphotos%2Fgbp-04.jpg&w=1080&q=75",
+        "alt": "Integrity Electric pool and heat-pump wiring job photo",
+        "naturalWidth": 475,
+        "naturalHeight": 633,
+        "loaded": true
+      },
+      {
+        "src": "https://integrity-electric-grm.vercel.app/_next/image?url=%2Fassets%2Fphotos%2Fgbp-05.jpg&w=1080&q=75",
+        "alt": "Integrity Electric barns and outbuildings job photo",
+        "naturalWidth": 475,
+        "naturalHeight": 356,
+        "loaded": true
+      },
+      {
+        "src": "https://integrity-electric-grm.vercel.app/_next/image?url=%2Fassets%2Fphotos%2Fgbp-06.jpg&w=1080&q=75",
+        "alt": "Integrity Electric shops and small commercial job photo",
+        "naturalWidth": 475,
+        "naturalHeight": 537,
+        "loaded": true
+      },
+      {
+        "src": "https://integrity-electric-grm.vercel.app/_next/image?url=%2Fassets%2Fphotos%2Fgbp-07.jpg&w=750&q=75",
+        "alt": "Integrity Electric finished-work photo 1",
+        "naturalWidth": 360,
+        "naturalHeight": 270,
+        "loaded": true
+      },
+      {
+        "src": "https://integrity-electric-grm.vercel.app/_next/image?url=%2Fassets%2Fphotos%2Fgbp-08.jpg&w=750&q=75",
+        "alt": "Integrity Electric finished-work photo 2",
+        "naturalWidth": 360,
+        "naturalHeight": 480,
+        "loaded": true
+      },
+      {
+        "src": "https://integrity-electric-grm.vercel.app/_next/image?url=%2Fassets%2Fphotos%2Fgbp-09.jpg&w=750&q=75",
+        "alt": "Integrity Electric finished-work photo 3",
+        "naturalWidth": 360,
+        "naturalHeight": 480,
+        "loaded": true
+      },
+      {
+        "src": "https://integrity-electric-grm.vercel.app/_next/image?url=%2Fassets%2Fphotos%2Fgbp-10.jpg&w=750&q=75",
+        "alt": "Integrity Electric finished-work photo 4",
+        "naturalWidth": 360,
+        "naturalHeight": 480,
+        "loaded": true
+      }
+    ]
+  },
+  "faq": {
+    "desktop_q1_open": true
+  },
+  "contrast": {
+    "desktop": [
+      {
+        "label": "nav-cta",
+        "found": true,
+        "color": "rgb(247, 244, 240)",
+        "backgroundColor": "rgb(207, 30, 30)",
+        "fontSize": "14px",
+        "fontFamily": "Inter, \"Inter Fallback\", -apple-system, \"system-ui\", \"Segoe UI\", sans-serif"
+      },
+      {
+        "label": "hero-cta-primary",
+        "found": true,
+        "color": "rgb(247, 244, 240)",
+        "backgroundColor": "rgb(207, 30, 30)",
+        "fontSize": "16px",
+        "fontFamily": "Inter, \"Inter Fallback\", -apple-system, \"system-ui\", \"Segoe UI\", sans-serif"
+      },
+      {
+        "label": "hero-cta-secondary",
+        "found": true,
+        "color": "rgb(247, 244, 240)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontFamily": "Inter, \"Inter Fallback\", -apple-system, \"system-ui\", \"Segoe UI\", sans-serif"
+      },
+      {
+        "label": "sticky-call (hidden on desktop)",
+        "found": true,
+        "color": "rgb(247, 244, 240)",
+        "backgroundColor": "rgb(207, 30, 30)",
+        "fontSize": "16px",
+        "fontFamily": "Inter, \"Inter Fallback\", -apple-system, \"system-ui\", \"Segoe UI\", sans-serif"
+      },
+      {
+        "label": "contact-phone-num",
+        "found": true,
+        "color": "rgb(247, 244, 240)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "52px",
+        "fontFamily": "Fraunces, \"Fraunces Fallback\", \"Iowan Old Style\", Georgia, serif"
+      },
+      {
+        "label": "form-submit",
+        "found": true,
+        "color": "rgb(247, 244, 240)",
+        "backgroundColor": "rgb(207, 30, 30)",
+        "fontSize": "16px",
+        "fontFamily": "Inter, \"Inter Fallback\", -apple-system, \"system-ui\", \"Segoe UI\", sans-serif"
+      },
+      {
+        "label": "trust-license-cell",
+        "found": true,
+        "color": "rgb(20, 17, 15)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "26px",
+        "fontFamily": "Fraunces, \"Fraunces Fallback\", \"Iowan Old Style\", Georgia, serif"
+      }
+    ],
+    "mobile": [
+      {
+        "label": "nav-cta",
+        "found": true,
+        "color": "rgb(247, 244, 240)",
+        "backgroundColor": "rgb(207, 30, 30)",
+        "display": "flex"
+      },
+      {
+        "label": "sticky-call",
+        "found": true,
+        "color": "rgb(247, 244, 240)",
+        "backgroundColor": "rgb(207, 30, 30)",
+        "display": "block"
+      },
+      {
+        "label": "nav-links (should be hidden)",
+        "found": true,
+        "color": "rgb(20, 17, 15)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "display": "none"
+      },
+      {
+        "label": "nav-mark logo image",
+        "found": true,
+        "color": "rgb(20, 17, 15)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "display": "block"
+      }
+    ]
+  },
+  "routes": {
+    "reviews": {
+      "title": "All Google reviews — Integrity Electric · Belleview, FL",
+      "description": "Curated set of recent Google reviews for Integrity Electrical Contracting of Florida Inc. — pulled from the live GBP listing.",
+      "h1": "The full Google read.",
+      "review_card_count": 10,
+      "positive_card_count": 8,
+      "negative_card_count": 2,
+      "section_labels": [
+        "Five-star reviews",
+        "Where things didn't go right"
+      ],
+      "has_back_link": true,
+      "google_outbound": true
+    },
+    "thanks": {
+      "title": "Message received — Integrity Electric",
+      "h1": "Message received.",
+      "has_phone_cta": true,
+      "has_back_link": true,
+      "robots_meta": "noindex, nofollow"
+    },
+    "opengraph_image": {
+      "contentType": "served"
+    }
+  },
+  "form": {
+    "found": true,
+    "action": "https://api.staticforms.xyz/submit",
+    "method": "post",
+    "accessKey": "sf_e0e200934d4f36c17a10d00c",
+    "subject": "Integrity Electric · Contact form",
+    "redirectTo": "https://integrity-electric-grm.vercel.app/thanks",
+    "replyTo": "@",
+    "honeypot_present": true,
+    "honeypot_offscreen": true,
+    "fields": [
+      {
+        "name": "$gotcha",
+        "type": "text",
+        "required": false,
+        "autocomplete": "off"
+      },
+      {
+        "name": "name",
+        "type": "text",
+        "required": true,
+        "autocomplete": "name"
+      },
+      {
+        "name": "email",
+        "type": "email",
+        "required": true,
+        "autocomplete": "email"
+      },
+      {
+        "name": "phone",
+        "type": "tel",
+        "required": false,
+        "autocomplete": "tel"
+      },
+      {
+        "name": "message",
+        "type": "textarea",
+        "required": true,
+        "autocomplete": ""
+      }
+    ],
+    "submit_button_label": "Send to Integrity"
+  },
+  "license_check": {
+    "trust_band_value": "EC13006493",
+    "footer_license_text": "FL EC# EC13006493",
+    "footer_license_hidden": false
+  }
+}

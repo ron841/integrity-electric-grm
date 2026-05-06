@@ -1,0 +1,68 @@
+{
+  "audit_pass": "v2",
+  "ran_at": "2026-05-05T23:10:00Z",
+  "live_url": "https://integrity-electric-grm.vercel.app",
+  "site_repo": "https://github.com/ron841/integrity-electric-grm",
+  "design_pack_ref": "_design-pack/integrity-electric-pack/ (iter-1 + v2-audit-trail in BUILD-DECISIONS.md)",
+  "audit_pack_ref": "https://github.com/ron841/grm-prospect-integrity-electrical-contracting-of-florida-inc",
+  "standing_docs_pinned_sha": "adc87d19b49d282f6b0b73559501745d049fd294",
+  "v1_closure": {
+    "P1_og_image": "shipped",
+    "P2_hero_jpg": "shipped (next/image)",
+    "P3_scroll_padding": "shipped (introduces v2 P1)",
+    "O1_logo_in_nav": "shipped (Fix Now reversal)",
+    "O2_truck_phone": "closed by D-21",
+    "O3_friday_asterisk": "Accept (persists)",
+    "D1_schema_image": "Accept",
+    "D2_schema_logo": "Accept"
+  },
+  "pack_reversals": {
+    "D-08_reviews_page": "shipped at /reviews (10 cards, 8 positive + 2 negative)",
+    "D-18_contact_form": "shipped (Static Forms, /thanks redirect)",
+    "O1_logo_swap": "shipped (nav image, footer text-mark)"
+  },
+  "walkthrough_resolutions": {
+    "D-21_phone": "(352) 307-6335 confirmed from logo image",
+    "D-22_license": "EC13006493 rendered in trust band + footer + schema.identifier"
+  },
+  "categories": {
+    "BLOCKERS": 0,
+    "POLISH": 3,
+    "OPTIONAL": 3,
+    "DESIGN_RE_REVIEW": 2
+  },
+  "findings": [
+    { "id": "P1", "category": "POLISH", "title": "Anchor landings at ~160px (scroll padding/margin double-up)", "screenshots": [], "build_location": "src/app/globals.css:22, src/app/globals.css:305" },
+    { "id": "P2", "category": "POLISH", "title": "Logo content density too high for 56px nav scale", "screenshots": ["01-desktop-above-fold.png"], "build_location": "src/app/page.tsx:9-13, src/app/globals.css:91-92" },
+    { "id": "P3", "category": "POLISH", "title": "Service-card photo mapping fuzzy; gbp-03/04 don't fit assigned cards", "screenshots": ["05-desktop-services.png"], "build_location": "src/app/page.tsx:124-149" },
+    { "id": "O1", "category": "OPTIONAL", "title": "Vanessa review dated 2 years ago reads stale alongside fresher proof", "screenshots": ["06-desktop-proof.png"], "build_location": "src/app/page.tsx:283" },
+    { "id": "O2", "category": "OPTIONAL", "title": "Owner-name spelling drift across review corpus (Matthew/Mathew/Matt)", "screenshots": ["06-desktop-proof.png", "21-reviews-full.png"], "build_location": "src/app/page.tsx:281, src/app/reviews/page.tsx" },
+    { "id": "O3", "category": "OPTIONAL", "title": "Friday hours asterisk + footnote (persists from pack D-12)", "screenshots": ["09-desktop-contact.png"], "build_location": "src/app/page.tsx:439-449" },
+    { "id": "D1", "category": "DESIGN_RE_REVIEW", "title": "Logo mix-blend-mode multiply — verify on Safari iOS", "screenshots": ["01-desktop-above-fold.png"], "build_location": "src/app/globals.css:91-92" },
+    { "id": "D2", "category": "DESIGN_RE_REVIEW", "title": "Service-card photo mapping was numeric not curated", "screenshots": ["05-desktop-services.png"], "build_location": "src/app/page.tsx:124-149" }
+  ],
+  "verified_clean_count": 24,
+  "v2_features_verified": [
+    "/reviews route: 10 cards (8 positive + 2 negative), section labels, back link, Google outbound",
+    "/thanks route: title, h1, phone CTA, back link, robots noindex",
+    "/opengraph-image: 1200x630 PNG, edge runtime, brand-correct",
+    "Contact form: action + accessKey + subject + redirectTo + replyTo + honeypot offscreen + 4 fields + submit",
+    "Trust band: 5 cells, EC13006493 in cell 5",
+    "Footer license: un-hidden, FL EC# EC13006493",
+    "Schema: identifier field with EC license; areaServed expanded to 6 cities",
+    "12 images probed (1 logo + 1 hero + 6 service + 4 proof), 0 failures",
+    "Hero served via next/image with WebP/AVIF transformation",
+    "og:image + twitter:image + og:image:width/height all present"
+  ],
+  "screenshots_dir": "screenshots/",
+  "screenshot_count": 19,
+  "raw_findings": "findings.json",
+  "audit_script": "run-audit.mjs",
+  "playwright_version": "1.59.1",
+  "smooth_scroll_override": "html { scroll-behavior: auto !important } injected via page.addStyleTag before anchor walks (v2 instrumentation improvement)",
+  "viewports_tested": [
+    { "name": "desktop", "width": 1440, "height": 900, "deviceScaleFactor": 2 },
+    { "name": "mobile", "width": 375, "height": 812, "deviceScaleFactor": 3, "isMobile": true }
+  ],
+  "routes_tested": ["/", "/reviews", "/thanks", "/opengraph-image"]
+}
